@@ -9,6 +9,17 @@
     "react": {
       "pragma": "React",
       "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      // use <root>/tsconfig.json
+      "typescript": {
+        // always try to resolve types under `<root>@types` directory
+        // even it doesn't contain any source code, like `@types/unist`
+        "alwaysTryTypes": true
+      }
     }
   },
   "parser": "@typescript-eslint/parser",
@@ -16,13 +27,22 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:jsx-a11y/recommended",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended" // Make sure this is always the last element in the array.
   ],
+  "plugins": ["simple-import-sort"],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/interface-name-prefix": 0,
     "@typescript-eslint/no-var-requires": 0,
-    "@typescript-eslint/explicit-module-boundary-types": 0
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "import/default": 0,
+    "import/order": 0,
+    "import/no-unresolved": "error",
+    "simple-import-sort/sort": "error",
+    "sort-imports": 0
   }
 }
