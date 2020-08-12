@@ -41,8 +41,8 @@
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "import/default": 0,
     "import/order": 0,
-    "import/no-unresolved": "error",
-    "simple-import-sort/sort": "error",
+    "import/no-unresolved": 0,
+    "simple-import-sort/sort": 0,
     "sort-imports": 0
   }
 }
