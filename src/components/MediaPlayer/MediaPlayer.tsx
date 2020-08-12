@@ -1,7 +1,7 @@
-import React from 'react';
-
-import ReactPlayer from 'react-player';
 import { usePlayer } from '@hooks/usePlayer';
+import React from 'react';
+import ReactPlayer from 'react-player';
+
 import styles from './MediaPlayer.module.css';
 
 const DEMO_MUSIC_LINK = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
