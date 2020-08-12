@@ -1,0 +1,6 @@
+.next
+coverage
+out
+*.css
+*.scss
+node_modules
